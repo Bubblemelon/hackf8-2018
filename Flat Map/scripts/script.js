@@ -3,19 +3,20 @@ const Reactive = require('Reactive');
 const TouchGestures = require('TouchGestures');
 const Diagnostics = require("Diagnostics");
 const Time = require('Time');
-
+const Animation = require('Animation');
 
 var mug_ctrl = Scene.root.find('plane_collection')
 var planeTracker = Scene.root.find('planeTracker0');
 
 
 
-var path_ctrl = Scene.root.find('path_ctrl')
-var planeTracker = Scene.root.find('planeTracker0');
+var path_ctrl = Scene.root.find('path_ctrl');
 
+var planeTracker = Scene.root.find('planeTracker0');
+var planeCol = planeTracker.find('plane_collection');
 
 TouchGestures.onTap().subscribe(function(gesture) {
-
+	//   planeTracker.trackPoint(gesture.location);
 
 	var timing = 300;
 	Time.setTimeout(
@@ -92,10 +93,55 @@ TouchGestures.onTap().subscribe(function(gesture) {
 });
 
 // TouchGestures.onTap().subscribe(function(gesture) {
+
+    
+
+// });
+
+Time.setTimeout( function(e){
+	Diagnostics.log("7777");
+	StartAni();
+}, 100);
+
+
+// TouchGestures.onTap().subscribe(function(gesture) {
 //   planeTracker.trackPoint(gesture.location);
     
 
 // });
+
+function StartAni(){
+
+	Diagnostics.log("3");
+
+	// var secTopParent = planeCol.find("Yellow")
+	
+	
+	var yellow = mug_ctrl.find("Yellow")
+	var green = mug_ctrl.find("Green")
+	var lBlue = mug_ctrl.find("LightBlue")
+	var purple = mug_ctrl.find("Purple")
+
+	var yellow_c = yellow.find("defaultobject")
+	var green_c = green.find("defaultobject")
+	var lBlue_c = lBlue.find("defaultobject")
+	var purple_c = purple.find("defaultobject")
+
+
+	var sampler = Animation.samplers.linear( 0.0, 2.0)
+	var driver = Animation.timeDriver({durationMilliseconds: 750}) ;
+
+	yellow_c.transform.scaleY = Animation.animate(driver, sampler);
+	green_c.transform.scaleY = Animation.animate(driver, sampler);
+	lBlue_c.transform.scaleY = Animation.animate(driver, sampler);
+	purple_c.transform.scaleY = Animation.animate(driver, sampler);
+
+	driver.start();
+
+	Diagnostics.log("2");
+
+	 
+}
 
 TouchGestures.onPan(planeTracker).subscribe(function(gesture) {
 
