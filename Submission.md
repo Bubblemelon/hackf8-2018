@@ -21,6 +21,7 @@ Over our discussion on how we can utilize Facebook technology/features and its p
 - The `Facebook Dating Feature` mentioned by Mark during the F8 keynote was really a teaser and we couldn't use it at all.
 - Having both front and back cameras on for AR does not work (OS level permissions related).
 - We weren't allowed early access to the Target Tracking API and had to find work arounds to demonstrate our ideas. This ideas will be full functional when these APIs and bugs in AR Studio gets fixed.
+- Chatbots cannot not ask permission to use a user's front/back camera. In other words, chatbots can open another application within Facebook, not yet at least. 
 
 ## Accomplishments that we're proud of
 - Completing AR experiences.
