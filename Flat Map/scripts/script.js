@@ -20,61 +20,61 @@ TouchGestures.onTap().subscribe(function(gesture) {
 
 	var timing = 300;
 	Time.setTimeout(
-		function (elapsedTime) { 
-		  Diagnostics.log('Timing 1.'); 
-		  path_ctrl.child("p1").hidden = false; 	
+		function (elapsedTime) {
+		  Diagnostics.log('Timing 1.');
+		  path_ctrl.child("p1").hidden = false;
 		  Time.setTimeout(
-				function (elapsedTime) { 
-				Diagnostics.log('Timing 2.'); 
-				path_ctrl.child("p2").hidden = false; 	
+				function (elapsedTime) {
+				Diagnostics.log('Timing 2.');
+				path_ctrl.child("p2").hidden = false;
 				Time.setTimeout(
-					function (elapsedTime) { 
-					Diagnostics.log('Timing 3.'); 
-					path_ctrl.child("p3").hidden = false; 	
+					function (elapsedTime) {
+					Diagnostics.log('Timing 3.');
+					path_ctrl.child("p3").hidden = false;
 					Time.setTimeout(
-						function (elapsedTime) { 
-						Diagnostics.log('Timing 4.'); 
-						path_ctrl.child("p4").hidden = false; 	
+						function (elapsedTime) {
+						Diagnostics.log('Timing 4.');
+						path_ctrl.child("p4").hidden = false;
 						Time.setTimeout(
-							function (elapsedTime) { 
-							Diagnostics.log('Timing 5.'); 
-							path_ctrl.child("p5").hidden = false; 	
+							function (elapsedTime) {
+							Diagnostics.log('Timing 5.');
+							path_ctrl.child("p5").hidden = false;
 							Time.setTimeout(
-								function (elapsedTime) { 
-								Diagnostics.log('Timing 6.'); 
-								path_ctrl.child("p6").hidden = false; 	
+								function (elapsedTime) {
+								Diagnostics.log('Timing 6.');
+								path_ctrl.child("p6").hidden = false;
 								Time.setTimeout(
-									function (elapsedTime) { 
-									Diagnostics.log('Timing 7.'); 
-									path_ctrl.child("p7").hidden = false; 
+									function (elapsedTime) {
+									Diagnostics.log('Timing 7.');
+									path_ctrl.child("p7").hidden = false;
 									Time.setTimeout(
-										function (elapsedTime) { 
-										Diagnostics.log('Timing 8.'); 
-										path_ctrl.child("p8").hidden = false; 	
+										function (elapsedTime) {
+										Diagnostics.log('Timing 8.');
+										path_ctrl.child("p8").hidden = false;
 										Time.setTimeout(
-											function (elapsedTime) { 
-											Diagnostics.log('Timing 9.'); 
-											path_ctrl.child("p9").hidden = false; 	
+											function (elapsedTime) {
+											Diagnostics.log('Timing 9.');
+											path_ctrl.child("p9").hidden = false;
 											Time.setTimeout(
-												function (elapsedTime) { 
-												Diagnostics.log('Timing 10.'); 
-												path_ctrl.child("p10").hidden = false; 	
+												function (elapsedTime) {
+												Diagnostics.log('Timing 10.');
+												path_ctrl.child("p10").hidden = false;
 												Time.setTimeout(
-													function (elapsedTime) { 
-													Diagnostics.log('Timing 11.'); 
-													path_ctrl.child("p11").hidden = false; 	
+													function (elapsedTime) {
+													Diagnostics.log('Timing 11.');
+													path_ctrl.child("p11").hidden = false;
 													Time.setTimeout(
-														function (elapsedTime) { 
-														Diagnostics.log('Timing 12.'); 
-														path_ctrl.child("p12").hidden = false; 	
+														function (elapsedTime) {
+														Diagnostics.log('Timing 12.');
+														path_ctrl.child("p12").hidden = false;
 														Time.setTimeout(
-															function (elapsedTime) { 
-															Diagnostics.log('Timing 13.'); 
-															path_ctrl.child("p13").hidden = false; 	
+															function (elapsedTime) {
+															Diagnostics.log('Timing 13.');
+															path_ctrl.child("p13").hidden = false;
 															Time.setTimeout(
-																function (elapsedTime) { 
-																Diagnostics.log('Timing 14.'); 
-																path_ctrl.child("p14").hidden = false; 	
+																function (elapsedTime) {
+																Diagnostics.log('Timing 14.');
+																path_ctrl.child("p14").hidden = false;
 															}, timing);
 														}, timing);
 													}, timing);
@@ -89,12 +89,12 @@ TouchGestures.onTap().subscribe(function(gesture) {
 				}, timing);
 			}, timing);
 		}, timing);
-		
+
 });
 
 // TouchGestures.onTap().subscribe(function(gesture) {
 
-    
+
 
 // });
 
@@ -106,7 +106,7 @@ Time.setTimeout( function(e){
 
 // TouchGestures.onTap().subscribe(function(gesture) {
 //   planeTracker.trackPoint(gesture.location);
-    
+
 
 // });
 
@@ -115,8 +115,8 @@ function StartAni(){
 	Diagnostics.log("3");
 
 	// var secTopParent = planeCol.find("Yellow")
-	
-	
+
+
 	var yellow = mug_ctrl.find("Yellow")
 	var green = mug_ctrl.find("Green")
 	var lBlue = mug_ctrl.find("LightBlue")
@@ -140,7 +140,7 @@ function StartAni(){
 
 	Diagnostics.log("2");
 
-	 
+
 }
 
 TouchGestures.onPan(planeTracker).subscribe(function(gesture) {
@@ -149,7 +149,7 @@ TouchGestures.onPan(planeTracker).subscribe(function(gesture) {
 });
 
 TouchGestures.onPinch().subscribe(function(gesture) {
-	
+
 	var lastScaleX = mug_ctrl.transform.scaleX.lastValue;
 	mug_ctrl.transform.scaleX = Reactive.mul(lastScaleX, gesture.scale);
 
