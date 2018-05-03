@@ -4,7 +4,9 @@ Devpost repo for Hack F8
 #### Links to FB Page Chat Bot:
 
 [Prototype Facebook ](https://www.facebook.com/DevC-Meetup-304462963421738/)   
-[Messenger Bot Link](https://m.me/304462963421738)   
+[Messenger Bot Link](https://m.me/304462963421738)  
+
+![AR Map Animation gif](https://media.giphy.com/media/1wohbFGVt6oRUvbeRt/giphy.gif)   
 
 ## Submission Background  
 
