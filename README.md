@@ -3,7 +3,7 @@ Devpost repo for Hack F8
 
 #### Links to FB Page Chat Bot:
 
-[Prototype Facebook ](https://www.facebook.com/DevC-Meetup-304462963421738/)   
+[Prototype Facebook Page](https://www.facebook.com/DevC-Meetup-304462963421738/)   
 [Messenger Bot Link](https://m.me/304462963421738)  
 
 ![AR Map Animation gif](https://media.giphy.com/media/1wohbFGVt6oRUvbeRt/giphy.gif)   
@@ -13,7 +13,7 @@ Devpost repo for Hack F8
 ### Inspiration
 Yeongrak Choi is a DevC (Facebook Developer Circles) lead in Seoul, Korea. He has had organised over 70 community events just not with DevC local events in Korea. He came to this hackathon with a goal of really wanting to help users to engage more easily and through different ways or medium. Cheryl has cool experiences with developing 3D games, and Yeonsoo is very eager to realize our software idea with beautiful designs.
 
-Over our discussion on how we can utilize Facebook technology/features and its platform to help DevC communities and communities alike, we decided on accomplishing this in a unique way (i.e. a path less traveled), and settled on integrating augmented reality (AR). By using 3D visualisation we hope to encourage more interactivity among community individuals e.g. by making location information enjoyable for (physical) offline events. Overall increasing community participation (keep loyal individuals and attract new attendees) and the effect of making community events fun and unique.
+Over our discussion on how we could utilize Facebook technology/features and its platform to help DevC communities and communities alike, we decided on accomplishing this in a unique way (i.e. a path less traveled), and settled on integrating augmented reality (AR). By using 3D visualisation we hope to encourage more interactivity among community individuals e.g. by making location information enjoyable for (physical) offline events. Overall increasing community participation (keep loyal individuals and attract new attendees) and the effect of making community events fun and unique.
 
 ### What it does
 - To demonstrate how all kinds of communities could use the technologies we've used to make AR experiences to make their event unique and engaging.
